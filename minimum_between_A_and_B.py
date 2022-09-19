@@ -1,0 +1,12 @@
+n=int(input())
+l=list(map(int,input().split()))
+a,b=map(int,input().split())
+g=[]
+for i in l:
+    if i>=a and i<=b:
+        g.append(i)
+if len(g)>0:
+    print(min(g))
+else:
+    print(-1)
+        
