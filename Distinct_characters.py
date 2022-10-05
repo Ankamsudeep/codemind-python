@@ -1,8 +1,8 @@
 n=input()
 n.replace(' ','')
-m=[]
+k=[]
 for i in n:
-    if i.lower()not in m and i!='' and i!=i.upper():
-        m.append(i)
-        h=''.join(sorted(m))
+    if n.count(i)==1 and i.lower() not in k and i!=i.upper() and i!='':
+        k.append(i)
+        h=''.join(sorted(k))
 print(h)
