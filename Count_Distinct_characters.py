@@ -1,0 +1,8 @@
+n=input()
+n.replace(' ','')
+k=[]
+for i in n:
+    if i.lower() not in k and i!=i.upper() and i!='':
+        k.append(i)
+        h=''.join(sorted(k))
+print(len(k))
