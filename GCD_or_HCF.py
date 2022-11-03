@@ -1,10 +1,10 @@
-x,y=map(int,input().split())
-if x > y:
-    smaller = y
-else:
-    smaller = x
-for i in range(1, smaller+1):
-    if((x % i == 0) and (y % i == 0)):
-        hcf = i
-print(hcf)
+n,m=map(int,input().split())
+if n>m:
+    s=m
+elif n<m:
+    s=n
+for i in range(1,s+1):
+    if n%i==0 and m%i==0:
+        h=i
+print(h)
     
